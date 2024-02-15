@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Civil Enginner</title>
+</head>
+
+<body>
+    <section class="bg">
+
+        <div class="navbar">
+
+            <div class="navbar__container">
+                <img src="menu.png" id="togglemenu">
+
+                <ul class="navbar__menu" id="navbar__menu">
+
+                    <li><a href="#Home" class="navbar__links" id="active">Home</a></li>
+                    <li><a href="#About" class="navbar__links">About</a></li>
+                    <li><a href="#Services" class="navbar__links">Services</a></li>
+                    <li><a href="project.html" class="navbar__links">Project</a></li>
+                    <li><a href="#Contact" class="navbar__links">Contact</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <!--Main Section-->
+        <section class="main" id="Home">
+            <h1>DIOGO D DIOGO</h1>
+            <p>GLOBAL SERVICES LTD.</p>
+            <a href="contact.html">Contact me</a>
+        </section>
+        <div class="img">
+            <img src="civil-engineer-banner.png.jpg">
+        </div>
+
+
+    </section>
+
+    <!--About Me Section-->
+    <div class="about" id="About">
+        <h1>About me</h1>
+        <p>Hey, My Name is onyenkachi.<br>I'm a civil enginner and i have been working in this field for years.<br>I'm
+            very skilled and good at what i do.</p>
+
+    </div>
+
+    <!--services Section-->
+    <div class="service" id="Services">
+        <h1>Services</h1>
+        <p> What we offer you: </p>
+        <div class="row">
+            <div class="service-col">
+                <h3>Building Construction</h3>
+            </div>
+            <div class="service-col">
+                <h3>Drainage Construction</h3>
+            </div>
+            <div class="service-col">
+                <h3>Road Construction</h3>
+            </div>
+            <div class="service-col">
+                <h3>Drawing</h3>
+            </div>
+            <div class="service-col">
+                <h3>Soil and Concrete Test</h3>
+            </div>
+            <div class="service-col">
+                <h3>Non-Destructive Test on Structure</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="Contact">
+
+        <form onsubmit="sendEmail(); reset(); return false">
+            <h1>contact me</h1>
+            <label>
+                Name: <input type="text" id="name" name="name" required>
+                Email: <input type="email" id="email" name="name" required>
+                message: <textarea type="text" id="message" name="message" placeholder="Enter your request"
+                    required></textarea>
+                <button type="submit"><a href="#">Submit</a></button>
+            </label>
+
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="row-1">
+            <div class="footer-col">
+                <p id="Home">Home</p>
+                <p id="About">About</p>
+                <p id="Service">Service</p>
+                <p id="Contact">Contact</p>
+
+            </div>
+
+            <div class="footer-col">
+                <p>call: 07064998246, 08068239263</p>
+                <p>Email: diogoglobalservices@gmail.com</p>
+                <p>Location: 1/3 Chief Kalu Ukiwe Street Trans-Ekulu Enugu.</p>
+            </div>
+
+        </div>
+        <hr>
+    </footer>
+
+
+
+    <script src="https://smtps.com/v3/smtp.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <section class="bg2">
+        <div class="contact" id="con-contact">
+
+            <form onclick="sendEmail(); reset(); return false">
+                <h1>contact me</h1>
+                <label>
+                    Name: <input type="text" id="name" name="name" required>
+                    Email: <input type="email" id="email" name="email" required>
+                    message: <textarea type="text" id="message" name="message" placeholder="Enter your request"
+                        required></textarea>
+                    <button type="submit"><a href="#">Submit</a></button>
+                </label>
+
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

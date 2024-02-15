@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.bg {
+  background-image: url("img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.bg2 {
+  background-image: url("img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+.navbar img {
+  display: none;
+}
+.navbar__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar__menu {
+  display: flex;
+  column-gap: 50px;
+  list-style: none;
+  margin-left: 30%;
+}
+.navbar__links {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar__links:hover {
+  color: bisque;
+}
+#active {
+  border-bottom: 2px solid orange;
+}
+.main {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  color: #e3dede;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main h1 {
+  font-size: 70px;
+}
+.main p {
+  color: orange;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+.main a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid orange;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.main a:hover {
+  background-color: orange;
+}
+.about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.img {
+  margin-top: 10%;
+  margin-left: 30px;
+}
+.img img {
+  width: 400px;
+}
+.about h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.about p {
+  font-size: 18px;
+}
+.service {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.service h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.service p {
+  font-size: 18px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin-top: 3%;
+  margin-left: 14px;
+  margin-right: 10px;
+}
+.service-col {
+  background-color: rgb(30, 5, 52);
+  color: #e9e4e4;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  flex-basis: 21%;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.contact form {
+  background-color: rgb(30, 5, 52);
+  padding: 40px;
+  border-radius: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.contact form h1 {
+  color: orange;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.contact label {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.contact label input {
+  padding: 8px 30px 8px 8px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.contact label textarea {
+  height: 100px;
+  outline: 0;
+  margin: 15px 10px;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-left: 5px;
+  text-decoration: none;
+}
+.contact button {
+  padding: 10px;
+  background-color: transparent;
+  outline: 0;
+  border: 1px solid orange;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.contact button a {
+  text-decoration: none;
+  color: #e3dede;
+}
+#sec {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.sec-suc {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 300px;
+  background-color: black;
+  padding: 20px;
+  color: #fff;
+  border-radius: 20px;
+}
+.sec-suc p {
+  font-size: 18px;
+}
+.sec-suc p a {
+  color: orange;
+}
+footer {
+  width: 100%;
+  flex-basis: 1;
+  background-color: black;
+  padding-top: 15%;
+  padding-bottom: 3%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p {
+  color: #fff;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+@media (max-width: 700px) {
+  .img {
+    display: none;
+  }
+  .navbar__menu {
+    width: 50%;
+    height: 100vh;
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: 2;
+    padding: 50px 150px;
+    line-height: 65px;
+    transition: 0.5s linear;
+  }
+  .navbar__menu.act {
+    display: block;
+  }
+  .navbar img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 500px;
+    z-index: 99;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 525px) {
+  .navbar img {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar img {
+    margin-right: 230px;
+  }
+  .contact form {
+    padding: 20px;
+  }
+  .contact label input {
+    padding: 5px 28px 5px 5px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    margin-top: 8px;
+  }
+  .contact label textarea {
+    margin: 15px 10px;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-left: 5px;
+    text-decoration: none;
+  }
+  .contact button {
+    font-size: 16px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 290px) {
+  .navbar img {
+    margin-right: 250px;
+  }
+  .contact form {
+    padding: 17px;
+  }
+  .contact label input {
+    padding: 4px 26px 4px 4px;
+    font-size: 16px;
+  }
+  .contact button {
+    font-size: 14px;
+  }
+}
