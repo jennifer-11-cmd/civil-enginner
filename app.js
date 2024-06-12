@@ -7,10 +7,10 @@ togglemenu.addEventListener("click", () => {
 
 function sendEmail() {
   Email.send({
-    Host: "smtp.gmail.com",
-    Username: "jennifereneh05@gmail.com",
-    Password: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-    To: "jennifereneh05@gmail.com",
+    Host: "smtp.elasticemail.com",
+    Username: "jennifereneh6@gmail.com",
+    Password: "E67FE80E89846BB50077BF512C172CED8155",
+    To: "diogoddiogoglobal@gmail.com",
     From: document.getElementById("email").value,
     subject: "New Contract Enquiry",
     body:
